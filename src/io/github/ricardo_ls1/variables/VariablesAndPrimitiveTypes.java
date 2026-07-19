@@ -1,4 +1,4 @@
-// Everithing inside these comments will be ignored by the compiler
+package io.github.ricardo_ls1.variables;// Everithing inside these comments will be ignored by the compiler
 
 /*
 aaaa

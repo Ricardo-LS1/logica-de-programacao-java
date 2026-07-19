@@ -1,3 +1,7 @@
+package io.github.ricardo_ls1.conditionalstatements.ifselse;
+
+import java.util.Scanner;
+
 /*
 As a user, I would like to have the names and ages of the participants in a swimming
 tournament, and I would like the system to display the following:
@@ -14,10 +18,13 @@ Software development processes
 Agile methodologies
 Scrum
  */
-public class SwimmingTournament {
+public class InteractiveSwimmingTournament {
     static void main(String[] args) {
-        String name = "Goku";
-        int age = 30;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = keyboard.nextLine();
+        System.out.println("Enter your age: ");
+        int age = keyboard.nextInt();
         String category;
         if (age < 10) {
             category = "Children's";

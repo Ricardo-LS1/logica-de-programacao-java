@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.conditionalstatements.ifselse;
+
 import java.util.Scanner;
 
 //Receive an integer from the user and print the corresponding day of the week, with 1 representing Monday.

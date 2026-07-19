@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.variables;
+
 /*
 Create a class that calculates a given percentage of a salary.
 * Create a class

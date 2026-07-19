@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.variables;
+
 /*
 Create a variable to store a salary value.
 Calculate the following percentages of that salary:

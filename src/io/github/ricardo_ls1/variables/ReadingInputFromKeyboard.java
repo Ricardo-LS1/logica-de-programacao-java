@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.variables;
+
 import java.util.Scanner;
 
 public class ReadingInputFromKeyboard {

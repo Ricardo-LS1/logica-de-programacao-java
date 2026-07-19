@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.variables;
+
 public class TestingVariables {
     static void main(String[] args) {
         char male = 'M';

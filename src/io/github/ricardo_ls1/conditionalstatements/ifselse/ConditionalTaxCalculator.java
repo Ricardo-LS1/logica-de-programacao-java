@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.conditionalstatements.ifselse;
+
 /*
 Given a salary value.
 

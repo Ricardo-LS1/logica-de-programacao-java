@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.conditionalstatements.ifselse;
+
 public class ConditionalStatementsLesson01 {
     public static void main(String[] args) {
         boolean condition = false;

@@ -1,3 +1,5 @@
+package io.github.ricardo_ls1.conditionalstatements.ifselse;
+
 public class IncomeTax {
     static void main(String[] args) {
         double salary = 40000D;
