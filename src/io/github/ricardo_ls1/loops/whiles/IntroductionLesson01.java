@@ -1,4 +1,4 @@
-package io.github.ricardo_ls1.loops;
+package io.github.ricardo_ls1.loops.whiles;
 
 public class IntroductionLesson01 {
     static void main(String[] args) {
