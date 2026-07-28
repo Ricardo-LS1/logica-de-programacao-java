@@ -1,4 +1,4 @@
-package io.github.ricardo_ls1.arrays;
+package io.github.ricardo_ls1.arrays.one_dimensional;
 
 public class ArraysIntroductionLesson01 {
     static void main(String[] args) {
