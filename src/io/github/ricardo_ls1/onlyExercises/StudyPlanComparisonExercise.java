@@ -66,12 +66,12 @@ public class StudyPlanComparisonExercise {
             } while (actualStudyMinutes[i] < 0);
         }
 
-        int totalPlannedStudy = 0;
+        int totalPlannedStudyMinutes = 0;
         int totalActualStudyMinutes = 0;
         int subjectsThatReachedGoal = 0;
 
         for (int i = 0; i < numberOfSubjects; i++) {
-            totalPlannedStudy += plannedStudyMinutes[i];
+            totalPlannedStudyMinutes += plannedStudyMinutes[i];
             totalActualStudyMinutes += actualStudyMinutes[i];
 
             if (actualStudyMinutes[i] >= plannedStudyMinutes[i]) {
@@ -94,11 +94,18 @@ public class StudyPlanComparisonExercise {
             System.out.println("Planned study minutes: " + plannedStudyMinutes[i]);
             System.out.println("Actual study minutes: " + actualStudyMinutes[i]);
 
-            if (actualStudyMinutes[i] > plannedStudyMinutes[i]) {
+            if (actualStudyMinutes[i] >= plannedStudyMinutes[i]) {
                 System.out.println("Goal reached.");
             } else {
                 System.out.println("Goal not reached.");
             }
         }
+
+        System.out.println("\n--- Overall Results ---");
+        System.out.println("Total planned study minutes: " + totalPlannedStudyMinutes);
+        System.out.println("Total actual study minutes: " + totalActualStudyMinutes);
+        System.out.println("Subjects that reached the goal: " + subjectsThatReachedGoal);
+        System.out.println("Most studied subject:  " + subjectNames[mostStudiedSubjectIndex]);
+        System.out.println("Minutes studied in this subject: " + actualStudyMinutes[mostStudiedSubjectIndex]);
     }
 }
