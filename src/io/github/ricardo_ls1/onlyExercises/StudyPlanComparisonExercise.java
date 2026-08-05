@@ -59,7 +59,7 @@ public class StudyPlanComparisonExercise {
 
         for (int i = 0; i < numberOfSubjects; i++) {
             do {
-                System.out.println("Enter the actual study minutes for "
+                System.out.print("Enter the actual study minutes for "
                         + subjectNames[i] + ": ");
 
                 actualStudyMinutes[i] = scanner.nextInt();
@@ -80,7 +80,7 @@ public class StudyPlanComparisonExercise {
         }
         int mostStudiedSubjectIndex = 0;
 
-        for (int i = 0; i < numberOfSubjects; i++) {
+        for (int i = 1; i < numberOfSubjects; i++) {
             if (actualStudyMinutes[i] > actualStudyMinutes[mostStudiedSubjectIndex]) {
 
                 mostStudiedSubjectIndex = i;
@@ -105,7 +105,20 @@ public class StudyPlanComparisonExercise {
         System.out.println("Total planned study minutes: " + totalPlannedStudyMinutes);
         System.out.println("Total actual study minutes: " + totalActualStudyMinutes);
         System.out.println("Subjects that reached the goal: " + subjectsThatReachedGoal);
-        System.out.println("Most studied subject:  " + subjectNames[mostStudiedSubjectIndex]);
+        System.out.println("Most studied subject: " + subjectNames[mostStudiedSubjectIndex]);
         System.out.println("Minutes studied in this subject: " + actualStudyMinutes[mostStudiedSubjectIndex]);
+
+        if (totalActualStudyMinutes >= totalPlannedStudyMinutes) {
+            int exceededMinutes = totalActualStudyMinutes - totalPlannedStudyMinutes;
+
+            System.out.println("Overall study plan completed.");
+            System.out.println("Minutes exceeded: " + exceededMinutes);
+        } else {
+            int missingMinutes = totalPlannedStudyMinutes - totalActualStudyMinutes;
+
+            System.out.println("Overall study plan not completed.");
+            System.out.println("Minutes missing: " + missingMinutes);
+        }
+        scanner.close();
     }
 }
